@@ -1,9 +1,0 @@
-# FitnessAssistant
-Personalized Fitness Assistant for Health and Wellness Coaches
-Can personalize diets based on restrictions, current weight, target weight, time period. Inputting actual food eaten and current weight can modify future diet. Will provide meals and recipe with portion sizes
-Suggest workout routines based on desired physique, training split, exercise goals, etc. (build muscle, cardio focused, bulk, cut)
-Define the objectives: Determine fitness goals, exercise preferences, desired level of guidance, and any specific health considerations that need to be considered.
-Collect pertinent data: Gather exercise routines, fitness tips, motivational quotes, nutritional guidelines, and any other valuable resources to create customized fitness plans that perfectly cater to each client's unique requirements.
-Fine-tune the model: To enhance the model, utilize the GPT Builder interface from OpenAI to train ChatGPT on the accumulated data. Ensure that the virtual assistant surpasses expectations in providing accurate exercise recommendations, inspiring messages, and invaluable insights on maintaining a healthy lifestyle.
-Evaluate and refine: Thoroughly evaluate and constantly improve and test the assistant’s recommendations rigorously. Closely observe its ability to provide helpful guidance and adapt its methods based on client feedback. Continuously refine its capabilities to enhance client satisfaction.
-Deliver personalized plans: Provide clients with personalized fitness plans through email or a dedicated app. This service helps people easily access their personalized workout routines, track their progress, and stay motivated on their fitness journey.
