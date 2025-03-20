@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Markdown from 'react-markdown';
+import "./Page.css";
 
 function ResultsPage() {
     const navigate = useNavigate();
@@ -16,11 +17,11 @@ function ResultsPage() {
     }, [navigate]);
 
     return (
-        <div className="ResultsPage">
+        <div className="background">
           <header className="App-header">
             <h1>Your Personalized Fitness Plan</h1>
             <Markdown>{response}</Markdown>
-            <button onClick={() => navigate("/")}>Back</button>
+            <button className='back-button' onClick={() => navigate('/')}>Back</button>
           </header>
         </div>
       );

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "./Page.css";
 
 function FormPage() {
   const [formData, setFormData] = useState({
@@ -36,24 +37,26 @@ function FormPage() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Enter Your Fitness Details</h1>
-        <form onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
-          <input type="number" name="age" placeholder="Age" value={formData.age} onChange={handleChange} required />
-          <select name="sex" value={formData.sex} onChange={handleChange} required>
-            <option value="">Select Sex</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-          </select>
-          <input type="number" name="height" placeholder="Height (cm)" value={formData.height} onChange={handleChange} required />
-          <input type="number" name="currentWeight" placeholder="Current Weight (kg)" value={formData.currentWeight} onChange={handleChange} required />
-          <input type="number" name="targetWeight" placeholder="Target Weight (kg)" value={formData.targetWeight} onChange={handleChange} required />
-          <button type="submit">Submit</button>
-        </form>
-      </header>
+    <div className="background">
+      <div className="glass-container">
+        <header>
+          <h1>Enter Your Fitness Details</h1>
+          <form onSubmit={handleSubmit}>
+            <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
+            <input type="text" name="age" placeholder="Age" value={formData.age} onChange={handleChange} required inputMode="numeric" pattern="[0-9]*" />
+            <select name="sex" value={formData.sex} onChange={handleChange} required>
+              <option value="">Select Sex</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" name="height" placeholder="Height (cm)" value={formData.height} onChange={handleChange} required inputMode="numeric" pattern="[0-9]*" />
+            <input type="text" name="currentWeight" placeholder="Current Weight (kg)" value={formData.currentWeight} onChange={handleChange} required inputMode="numeric" pattern="[0-9]*" />
+            <input type="text" name="targetWeight" placeholder="Target Weight (kg)" value={formData.targetWeight} onChange={handleChange} required inputMode="numeric" pattern="[0-9]*" />
+            <button type="submit">Submit</button>
+          </form>
+        </header>
+      </div>
     </div>
   );
 }
